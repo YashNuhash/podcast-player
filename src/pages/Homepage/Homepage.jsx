@@ -30,7 +30,7 @@ const Homepage = () => {
   return (
     <div>
       <Helmet>
-        <title>Home | Podcast Player</title>
+        <title>NexCast</title>
       </Helmet>
       {podcasts.length > 0 && <PodcastList podcasts={podcasts} />}
       {isFetching && <Spinner />}

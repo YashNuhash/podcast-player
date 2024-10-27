@@ -44,10 +44,13 @@ export const fetchPodcastLists = async (dispatch, page, lastFetchedPage) => {
       const { data } = await listenNotesApi.get(
         `curated_podcasts?page=${page}`,
       )
-
+     // 
+     console.log("API Response Genres:", data);
       dispatch(setPodcastLists(data))
     }
   } catch (error) {
+    //
+    console.error("API Error:", error); 
     dispatch(setError(error))
   }
 }

@@ -5,4 +5,4 @@ export const listenNotesApi = axios.create({
     headers: {
         'X-ListenAPI-Key': process.env.REACT_APP_LISTEN_NOTES_API_KEY,
     },
-})
+});

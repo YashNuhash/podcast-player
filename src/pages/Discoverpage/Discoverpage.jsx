@@ -34,7 +34,7 @@ const Discoverpage = () => {
   return (
     <div>
       <Helmet>
-        <title>Discover Podcasts | Podcast Player</title>
+        <title>NexCast-Discover Podcasts</title>
       </Helmet>
       {lists.length > 0 &&
         lists.map(({ id, title, podcasts }) => (
